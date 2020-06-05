@@ -19,6 +19,11 @@ package org.springframework.transaction;
 import org.springframework.lang.Nullable;
 
 /**
+ *
+ * 这是Spring事务基础结构中的中心接口。
+ * 应用程序可以直接使用它，但它主要不是作为API:
+ * 通常，应用程序将使用TransactionTemplate或
+ * 通过AOP进行声明性事务界定。
  * This is the central interface in Spring's transaction infrastructure.
  * Applications can use this directly, but it is not primarily meant as API:
  * Typically, applications will work with either TransactionTemplate or

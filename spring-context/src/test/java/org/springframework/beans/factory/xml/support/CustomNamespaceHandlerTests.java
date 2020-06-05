@@ -206,7 +206,10 @@ public class CustomNamespaceHandlerTests {
  * @author Rob Harrop
  */
 final class TestNamespaceHandler extends NamespaceHandlerSupport {
-
+	/**
+	 *  key：元素名
+	 *  value：对应 BeanDefinitionParser 的解析器
+	 */
 	@Override
 	public void init() {
 		registerBeanDefinitionParser("testBean", new TestBeanDefinitionParser());

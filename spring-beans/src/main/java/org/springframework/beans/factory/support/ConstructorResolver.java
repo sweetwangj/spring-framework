@@ -287,6 +287,14 @@ class ConstructorResolver {
 		return bw;
 	}
 
+	/**
+	 * 实例化策略
+	 * @param beanName
+	 * @param mbd
+	 * @param constructorToUse
+	 * @param argsToUse
+	 * @return
+	 */
 	private Object instantiate(
 			String beanName, RootBeanDefinition mbd, Constructor<?> constructorToUse, Object[] argsToUse) {
 
